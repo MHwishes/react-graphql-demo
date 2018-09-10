@@ -11,9 +11,9 @@ const MessageList = ({ data: {loading, error, messages }}) => {
   }
 
   return (
-    <div className="channelsList">
+    <div className="message-list">
       { messages.map( message =>
-        (<div key={message.id}>{message.content}--{message.author}</div>)
+        (<li className="message-item" key={message.id}>{message.content}--{message.author}</li>)
       )}
     </div>
   );

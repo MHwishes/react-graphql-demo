@@ -30,23 +30,25 @@ class AddMessage extends Component {
 
   render () {
     return (
-      <div>
-        <div>作者：<input
+      <div className="add-message">
+        <div className="author">作者：<input
           type="text"
+          className="message-input"
           value={this.state.author}
           placeholder="author"
           onChange={this.handleKeyUpAuthor}
         />
         </div>
-        <div>
+        <div className="content">
           内容：<input
           type="text"
+          className="message-input"
           value={this.state.content}
           placeholder="New message"
           onChange={this.handleKeyUpContent}
         />
         </div>
-        <button onClick={this.confirm}>确定</button>
+        <button onClick={this.confirm} className="message-confirm">确定</button>
       </div>
     )
   }

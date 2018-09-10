@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import logo from './logo.svg'
 import './App.css'
 import AddMessage from './AddMessage'
 import MessageList from './MessageList'
@@ -33,11 +32,8 @@ class App extends Component {
     return (
       <ApolloProvider client={client}>
         <div className="App">
-          <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo"/>
-            <h1 className="App-title">Welcome to React</h1>
-          </header>
           <div className="App-intro">
+            <h1 className="App-header">react-graphql-demo</h1>
             < RandomData/>
             <AddMessage/>
             <MessageList/>
