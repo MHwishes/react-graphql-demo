@@ -53,10 +53,10 @@ class AddMessage extends Component {
 }
 
 const addMessageMutation = gql`
- mutation {
+ mutation createMessage($author:String,$content:String){
   createMessage(input: {
-    author: "andy",
-    content: "hope is a good thing",
+    author: $author,
+    content: $content,
   }) {
     id
   }
